@@ -1,133 +1,156 @@
-/* =============== RESET BASE =============== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Whitney", 'Helvetica Neue', Helvetica, Arial, sans-serif
-}
-.debug {
-  outline: 1px dotted black;
-  text-align: center;
-  padding: 1rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #23272a;
 }
 
-/* =============== TOP BAR =============== */
-.top-bar {
-  background-color: #add8e6;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-.top-bar .logo {
-  width: 20%;
-  background-color: orange;
-}
-.top-bar .nav {
-  width: 60%;
-  background-color: goldenrod;
-  text-align: center;
-}
-.top-bar .login {
-  width: 20%;
-  background-color: orange;
-  text-align: right;
-}
-
-.nav a {
-  margin: 0 0.5rem;
+a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: #fff;
 }
 
-.nav a:hover {
-  text-decoration: underline;
-}
-
-.top-bar .nav {
-  width: 60%;
-  background-color: goldenrod;
+.header {
+  background: #255ee9;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav {
+  display: flex;
   gap: 1rem;
 }
 
+.logo {
+  width: 100px;
+}
 
+.login-btn {
+  background: white;
+  color: #255ee9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
-/* =============== JUMBOTRON =============== */
 .hero {
-  background-color: navy;
-  height: 250px;
+  background: #255ee9;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.hero::before {
-  content: "";
-  width: 70%;
-  height: 70%;
-  background-color: violet;
-  display: block;
-}
-
-/* =============== SECTION COMUNI =============== */
-.section {
-  display: flex;
-  padding: 2rem;
   gap: 1rem;
 }
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .white {
-  background-color: white;
+  background: white;
+  color: #23272a;
 }
-.gray {
-  background-color: #d3d3d3;
-}
+
 .dark {
-  background-color: #222;
-  align-items: stretch;
+  background: #23272a;
+  color: white;
 }
 
-/* =============== COLONNE =============== */
-.col {
-  flex: 1;
-  height: 250px;
-}
-.blue {
-  background-color: dodgerblue;
-}
-.pink {
-  background-color: pink;
+.purple {
+  background: #5865f2;
+  color: white;
 }
 
-/* =============== SEZIONE VERDE =============== */
-.full.green {
-  background-color: green;
-  width: 100%;
-  height: 300px;
-}
-
-/* =============== SEZIONE NERA =============== */
-.sidebar {
-  width: 25%;
-  background-color: salmon;
-}
-.columns {
-  width: 75%;
+.feature-row {
   display: flex;
-  gap: 0.5rem;
-}
-.box {
-  flex: 1;
-  background-color: turquoise;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
 }
 
-/* =============== FOOTER =============== */
+.feature-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-row img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.big-feature {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 3rem;
+}
+
+.cta img {
+  margin-bottom: 1rem;
+}
+
 .footer {
-  background-color: aquamarine;
+  background: #23272a;
+  color: white;
+  padding: 2rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
+  margin-top: 2rem;
 }
+
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
